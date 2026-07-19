@@ -1,0 +1,11 @@
+{
+  "_comment": "KILL SWITCH. Copy this file to the ROOT of the p3ohyes/gloomstone-releases repo (main branch) — the shipped app reads it from raw.githubusercontent.com on launch. An empty 'blocked' list is the normal, healthy state.",
+  "_rules": [
+    "ONLY add a version AFTER a fixed version is published. Blocking with no fix available strands players with nothing to update to.",
+    "Exact version strings. No ranges — a range typo could take out every build at once.",
+    "Remove entries once nobody is realistically still on them; the list is not a changelog.",
+    "The app FAILS OPEN: if this file is missing, unreachable or malformed, the game launches normally."
+  ],
+  "blocked": [],
+  "message": ""
+}
